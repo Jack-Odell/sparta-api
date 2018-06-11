@@ -141,169 +141,49 @@ describe Postcodesio do
     end
 
     it "should return a longitude float value" do
-      expect(@postcodesio.get_multi_longitude_string(@post_array)).to be_kind_of(String)
+      expect(@postcodesio.get_multi_longitude_string(@post_array)).to be_kind_of(Float)
     end
 
     it "should return a latitude float value" do
-      pending
-
+      expect(@postcodesio.get_multi_latitude_string(@post_array)).to be_kind_of(Float)
     end
 
     it "should return a parliamentary constituency string" do
-      pending
-
+      expect(@postcodesio.get_multi_parliment_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a european_electoral_region string" do
-      pending
-
+      expect(@postcodesio.get_multi_eur_vote_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a primary_care_trust string" do
-      pending
-
+      expect(@postcodesio.get_multi_prime_care_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a region string" do
-      pending
-
+      expect(@postcodesio.get_multi_region_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a parish string" do
-      pending
-
+      expect(@postcodesio.get_multi_parish_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a lsoa string" do
-      pending
-
+      expect(@postcodesio.get_multi_lsoa_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a msoa string" do
-      pending
-
+      expect(@postcodesio.get_multi_msoa_string(@post_array)).to be_kind_of(String)
     end
     # admin ward and county are not documented however tested below
 
     it "should return a admin_district string" do
-      pending
-
+      expect(@postcodesio.get_multi_admin_district_string(@post_array)).to be_kind_of(String)
     end
 
     it "should return a incode string of three characters" do
-      pending
-
+      expect(@postcodesio.get_multi_incode_string(@post_array)).to eq(3)
     end
-
-    it "should return a msoa string" do
-      pending
-
-    end
-
-    it "should return a incode string of 3-4 characters" do
-      pending
-
-    end
-
-    it "should have a results hash" do
-      pending
-
-    end
-
-    it "should return a postcode between 5-7 in length"  do
-      pending
-
-    end
-
-    it "should return an quality key integer between 1-9" do
-      pending
-
-    end
-
-    it "should return an ordnance survey eastings value as integer" do
-      pending
-
-    end
-
-    it "should return an ordnance survey eastings value as integer" do
-      pending
-
-    end
-
-    it "should return a country which is one of the four constituent countries of the UK" do
-      pending
-
-    end
-
-    it "should return a string value for NHS authority " do
-      pending
-    end
-
-    it "should return a longitude float value" do
-      pending
-
-    end
-
-    it "should return a latitude float value" do
-      pending
-
-    end
-
-    it "should return a parliamentary constituency string" do
-      pending
-
-    end
-
-    it "should return a european_electoral_region string" do
-      pending
-
-    end
-
-    it "should return a primary_care_trust string" do
-      pending
-
-    end
-
-    it "should return a region string" do
-      pending
-
-    end
-
-    it "should return a parish string" do
-      pending
-
-    end
-
-    it "should return a lsoa string" do
-      pending
-
-    end
-
-    it "should return a msoa string" do
-      pending
-
-    end
-    # admin ward and county are not documented however tested below
-
-    it "should return a admin_district string" do
-      pending
-
-    end
-
-    it "should return a incode string of three characters" do
-      pending
-
-    end
-
-    it "should return a msoa string" do
-      pending
-
-    end
-
-    it "should return a incode string of 3-4 characters" do
-      pending
-    end
-
   end
 
 

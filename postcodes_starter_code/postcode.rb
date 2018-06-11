@@ -180,6 +180,56 @@ class Postcodesio
     response = get_multiple_postcodes(post_array)
     response['result'][1]['result']['longitude']
   end
+
+  def get_multi_latitude_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['latitude']
+  end
+
+  def get_multi_parliment_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['parliamentary_constituency']
+  end
+
+  def get_multi_eur_vote_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['european_electoral_region']
+  end
+
+  def get_multi_prime_care_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['primary_care_trust']
+  end
+
+  def get_multi_region_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['region']
+  end
+
+  def get_multi_parish_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['parish']
+  end
+
+  def get_multi_lsoa_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['lsoa']
+  end
+
+  def get_multi_msoa_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['msoa']
+  end
+
+  def get_multi_admin_district_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['admin_district']
+  end
+
+  def get_multi_incode_string(post_array)
+    response = get_multiple_postcodes(post_array)
+    response['result'][1]['result']['incode'].length
+  end
 end
 
 
