@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'Testing the exchange rates' do
 
   before(:all) do
-    @exchange_rates = ParseJson.new(HTTParty.get('http://api.fixer.io/latest').body)
+    @exchange_rates = ParseJson.new(HTTParty.get('http://data.fixer.io/api/latest?access_key=9d8a9108b5962ddb85c9840f12ed7f90').body)
   end
 
   it 'Should be a Hash' do
@@ -19,7 +19,7 @@ describe 'Testing the exchange rates' do
   end
 
 
-  it "should countain 31 rates" do
+  it "should countain 168 rates" do
     @key_num = 0
     @value_num = 0
 
@@ -28,13 +28,13 @@ describe 'Testing the exchange rates' do
       @value_num += 1
     end
 
-    expect(@key_num).to eq 31
-    expect(@value_num).to eq 31
+    expect(@key_num).to eq 168
+    expect(@value_num).to eq 168
   end
 
-  it "should all rates should be Floats" do
+  it "should all rates should be Floats or Integers" do
     @exchange_rates.json_file["rates"].each do |k,v|
-      expect(v).to be_kind_of(Float)
+      expect(v).to be_kind_of(Float).or be_kind_of(Integer)
     end
   end
 
