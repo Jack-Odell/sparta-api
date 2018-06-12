@@ -231,13 +231,3 @@ class Postcodesio
     response['result'][1]['result']['incode'].length
   end
 end
-
-
-postcode = Postcodesio.new
- p postcode.get_multiple_postcodes(["OX495NU", "M320JG", "NE301DP"])
-
-# p postcode.get_single_postcode("SG75PX")
-
-# puts postcode.get_multi_postcode_code(["OX49 5NU", "M32 0JG", "NE30 1DP"])
-
-# p postcode.get_first_postcode(["OX495NU", "M320JG", "NE301DP"])

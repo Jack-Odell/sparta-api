@@ -27,11 +27,11 @@ describe Postcodesio do
     end
 
     it "should return an ordnance survey eastings value as integer" do
-      expect(@Postcodesio.get_eastings_int(@postcode_single)).to be_kind_of(Integer)
+      expect(@postcodesio.get_eastings_int(@postcode_single)).to be_kind_of(Integer)
     end
 
     it "should return an ordnance survey northings value as integer" do
-      expect(@Postcodesio.get_northings_int(@postcode_single)).to be_kind_of(Integer)
+      expect(@postcodesio.get_northings_int(@postcode_single)).to be_kind_of(Integer)
     end
 
     it "should return a country which is one of the four constituent countries of the UK" do
@@ -125,11 +125,11 @@ describe Postcodesio do
     end
 
     it "should return an ordnance survey eastings value as integer" do
-      expect(@Postcodesio.get_multi_eastings_int(@post_array)).to be_kind_of(Integer)
+      expect(@postcodesio.get_multi_eastings_int(@post_array)).to be_kind_of(Integer)
     end
 
     it "should return an ordnance survey northings value as integer" do
-      expect(@Postcodesio.get_multi_northings_int(@post_array)).to be_kind_of(Integer)
+      expect(@postcodesio.get_multi_northings_int(@post_array)).to be_kind_of(Integer)
     end
 
     it "should return a country which is one of the four constituent countries of the UK" do
